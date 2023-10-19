@@ -48,3 +48,11 @@ input[type=checkbox]:checked, input[type=checkbox]:focus {
 .banners-titulo {
   --bs-bg-opacity: .2; /* Define uma variável com a opacidade de fundo em 20% (0.2) */
 }
+
+.botao-padrao {
+  background-color: var(--marrom-claro);
+}
+
+.botao-padrao:hover {
+  background-color: var(--marrom-escuro);
+}
