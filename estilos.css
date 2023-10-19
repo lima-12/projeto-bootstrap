@@ -1,5 +1,50 @@
+/* Definindo variáveis de cores */
 body {
-  --bege: #E6E0D6;
-  --marrom-escuro: #816D4F;
-  --marrom-claro: #B29463;
+  --bege: #E6E0D6; /* Cor bege */
+  --marrom-escuro: #816D4F; /* Cor marrom escuro */
+  --marrom-claro: #B29463; /* Cor marrom claro */
+  font-family: 'Barlow', sans-serif; /* Fonte de texto */
+  height: 4000px; /* Altura do corpo da página */
+}
+
+/* Estilizando caixas de seleção (checkboxes) */
+input[type=checkbox] {
+  border: 2px solid var(--marrom-claro); /* Borda com a cor marrom-claro */
+  box-shadow: none; /* Sem sombra */
+}
+
+/* Estilizando caixas de seleção marcadas ou com foco */
+input[type=checkbox]:checked, input[type=checkbox]:focus {
+  background-color: var(--marrom-claro); /* Cor de fundo marrom-claro */
+  border-color: var(--marrom-claro); /* Cor da borda marrom-claro */
+  box-shadow: none; /* Sem sombra */
+  outline: none; /* Sem contorno quando em foco */
+}
+
+/* Estilizando um elemento com a classe .banner-1 */
+.banner-1 {
+  background-image: url(./assets/banner-1.png); /* Imagem de fundo */
+}
+
+.banner-2 {
+  background-image: url(./assets/banner-2.png); /* Imagem de fundo */
+}
+
+.banner-3 {
+  background-image: url(./assets/banner-3.png); /* Imagem de fundo */
+}
+
+/* Estilizando elementos com a classe .banners */
+.banners {
+  width: 100%; /* Largura de 100% da largura disponível */
+  height: 100vh; /* Altura de 100% da altura da viewport */
+  background-repeat: no-repeat; /* Imagem de fundo não se repete */
+  background-size: cover; /* Dimensionamento da imagem de fundo */
+  background-position: center; /* Posição da imagem de fundo no centro */
+  background-attachment: fixed; /* Imagem de fundo fixa na viewport */
+}
+
+/* Estilizando elementos com a classe .banners-titulo */
+.banners-titulo {
+  --bs-bg-opacity: .2; /* Define uma variável com a opacidade de fundo em 20% (0.2) */
 }
